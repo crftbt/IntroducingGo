@@ -4,8 +4,9 @@ import "fmt"
 
 func main() {
 	defer func() {
-		str := recover()
-		fmt.Println(str)
+		if x := recover(); x != nil {
+			fmt.Println("RECOVERED:", x)
+		}
 	}()
 	panic("PANIC IN THE DISCO")
 }

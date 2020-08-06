@@ -7,6 +7,6 @@ func zero(xPtr *int) {
 }
 func main() {
 	x := 5
-	zero(&x)
-	fmt.Println(x) // x is 0
+	zero(&x) //Memory address of variable here
+	fmt.Println(x)
 }

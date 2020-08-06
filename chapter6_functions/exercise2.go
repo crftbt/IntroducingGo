@@ -4,18 +4,12 @@ package main
 
 import "fmt"
 
-func half(full int) (int, string) {
-	halved := full / 2
-	eoo := halved % 2
-	if eoo == 0 {
-		return halved, "even"
-	} else {
-		return halved, "odd"
-	}
+func half(full int) (int, bool) {
+	return full/2, full%2==0
 }
 
 func main() {
-	var i int = 6
+	var i int = 2
 	x, y := half(i)
 	fmt.Println(x, y)
 }
