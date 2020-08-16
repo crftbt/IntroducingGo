@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func half(full int) (int, bool) {
-	return full/2, full%2==0
+	return full / 2, full%2 == 0
 }
 
 func main() {

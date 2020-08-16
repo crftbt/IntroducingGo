@@ -11,10 +11,10 @@ func swap(x, y *int) {
 func main() {
 	x := 1
 	y := 2
-//	xold := x
-//	yold := y
-//	x = yold
-//	y = xold
+	//	xold := x
+	//	yold := y
+	//	x = yold
+	//	y = xold
 	swap(&x, &y)
 	fmt.Println("x:", x, "y:", y)
 }

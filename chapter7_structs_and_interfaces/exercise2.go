@@ -9,8 +9,8 @@ type Person struct {
 }
 
 type Android struct {
-	Person	//embedded type anonymous field here
-	Model string
+	Person //embedded type anonymous field here
+	Model  string
 }
 
 func (p *Android) Talk() {
@@ -20,6 +20,6 @@ func (p *Android) Talk() {
 func main() {
 	per := Person{"Kryten"}
 	and := Android{per, "Series 4000"}
-//	per.Talk()
+	//	per.Talk()
 	and.Talk()
 }

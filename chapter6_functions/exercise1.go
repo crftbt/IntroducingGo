@@ -15,7 +15,7 @@ func sum(xs []int) int { // Hello, function signature here.
 func main() {
 	xs := []int{1, 2, 3, 4}
 
-//	total := 0
+	//	total := 0
 
 	fmt.Println(sum(xs))
 }
